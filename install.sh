@@ -13,8 +13,8 @@ echo "  : Checking to see if $APP_NAME is already installed."
 SYS_PROFILER_QUERY=$(system_profiler SPApplicationsDataType | grep -i boot2docker | head -n 1 | grep -io "$APP_NAME")
 echo "  : System profiler query result --> [$SYS_PROFILER_QUERY]."
 
-echo 'WARNING REMOVE!!!!'
-SYS_PROFILER_QUERY='blahblah'
+#echo 'WARNING REMOVE!!!!'
+#SYS_PROFILER_QUERY='blahblah'
 
 if [ $SYS_PROFILER_QUERY == $APP_NAME ]; then
   echo "  : $APP_NAME is already installed, exiting!"
