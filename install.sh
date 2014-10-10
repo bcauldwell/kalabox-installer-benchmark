@@ -16,7 +16,7 @@ echo "  : System profiler query result --> [$SYS_PROFILER_QUERY]."
 #echo 'WARNING REMOVE!!!!'
 #SYS_PROFILER_QUERY='blahblah'
 
-if [ $SYS_PROFILER_QUERY == $APP_NAME ]; then
+if [ "$SYS_PROFILER_QUERY" == "$APP_NAME" ]; then
   echo "  : $APP_NAME is already installed, exiting!"
   exit 1
 else
