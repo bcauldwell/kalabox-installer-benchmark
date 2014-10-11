@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 echo '  : Spinning up boot2docker...'
 
